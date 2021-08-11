@@ -1,0 +1,2 @@
+# SMS_APPLICATION
+School Management System project is developed using HTML, CSS, Bootstrap, JavaScript and PHP, MYSQL. Talking about the project, it has all the essential features. This project contains the admin side where he/she can CRUD and manage students, Fees, teachers, classes, subjects, Stuffs, Results, Students, hostels &amp; many more And Frond Side Publishing. The admin plays the main role in the management of the system. In this project, all the main functions are performed from the admin side.
