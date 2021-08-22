@@ -5,12 +5,11 @@ $result= mysqli_query($mysqli,$query);
 ?>
 
 <?php 
-if(isset($_GET['status'])){
-    if($_GET['status']=='delete'){
+if(isset($_GET['delete'])){
         $id= $_GET['id'];
-        $deleteID= "delete from 'at_add_attendance' where ID='$ID'";
+        $deleteID= "delete from at_add_attendance where ID='$ID'";
         $delSMS= $crud->delete($deleteID);
-    }
+    
     if(isset($delSMS)){
         echo $delSMS; 
     }
@@ -69,7 +68,7 @@ if(isset($_GET['status'])){
                                     <td>
                                         <span class="label label-warning"><a href="edit.php?GetID=<?php echo $user_id ?>">Edit</a></span>
                                     </td>
-                                    <td><a onclick="return confirm('Are you sure?')"href="?status=delete&&id=<? php echo $ID['ID'];
+                                    <td><a onclick="return confirm('Are you sure?')"href="admin-attendence-all.php?delete=<? php echo $ID;
                                      ?>" class="ad-st-view">Delete</a></td>
                                     }
                                 </tr>
